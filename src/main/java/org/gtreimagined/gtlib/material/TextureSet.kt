@@ -71,6 +71,7 @@ class TextureSet @JvmOverloads constructor(
         val QUARTZ: TextureSet = TextureSet(Ref.ID, "quartz")
         @JvmField
         val FINE: TextureSet = TextureSet(Ref.ID, "fine")
+        @JvmField
         val FLINT: TextureSet = TextureSet(Ref.ID, "flint")
         @JvmField
         val LIGNITE: TextureSet = TextureSet(Ref.ID, "lignite")
