@@ -88,6 +88,7 @@ object SlotTypes {
             )
         }
         b.slotGroup = false
+        b.maxStackSize = 1
         b.allowExternalInput = false
         b.allowExternalOutput = false
         b.phantom = true
