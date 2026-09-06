@@ -88,7 +88,6 @@ object SlotTypes {
                 item.getOrDefault(type, EmptyHandler.INSTANCE), i
             )
         }
-        b.tester = NO_INPUT
         b.slotGroup = false
         b.allowExternalInput = false
         b.allowExternalOutput = false
