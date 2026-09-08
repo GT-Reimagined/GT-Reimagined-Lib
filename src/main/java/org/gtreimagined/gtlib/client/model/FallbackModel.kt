@@ -25,6 +25,9 @@ class FallbackModel(val baseModel: UnbakedModel, val fallbackModel: UnbakedModel
     override fun bakeModel(configuration: IGeometryBakingContext, bakery: ModelBaker, getter: Function<Material, TextureAtlasSprite>,
                            transform: ModelState, overrides: ItemOverrides, loc: ResourceLocation): BakedModel {
         val model = if (useFallback) this.fallbackModel else this.baseModel
+        if (model is BlockModel) {
+            return model.bake(bakery, model, getter, transform, loc, model.customData.isGui3d)
+        }
         return model.bake(bakery, getter, transform, loc)!!
     }
 
